@@ -51,7 +51,7 @@ width: 1400px;
 
 
 
-.spades:hover {
+.icon-spades:hover {
   fill: greenyellow;
 }
 
@@ -65,4 +65,13 @@ width: 1400px;
   width: 1px;
   height: 1px; 
  margin: -1px; 
+}
+
+.icon-btn:hover svg path {
+  fill: green;
+}
+
+.icon-btn {
+  width: 100px;
+  height: 100px;
 }
