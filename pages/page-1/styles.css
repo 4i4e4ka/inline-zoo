@@ -1,0 +1,68 @@
+/*первичный цвет текста #000000;*/
+/* цвет заголовка #00A092; */
+/*вторичный цвет текста #FFFFFF;*/
+/*первычный цвет фона #FFFFFF;*/
+/* вторичный цвет фона #20113D; */
+
+ :root {
+  --primary-text-color: #000000;
+  --title-text-color:  #00A092;
+  --secondary-text-color: #FFFFFF;
+  --background-color-primary:  #FFFFFF;
+  --background-color-secondary:  #FFFFFF;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  
+  color: var(--primary-text-color);
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  margin: 0;
+  background: teal;
+}
+
+.container {
+width: 1400px;
+ margin: 0 auto;
+ 
+} 
+
+.social-link .icon,
+.icon-spades {
+  width: 40px;
+  height: 40px;
+ 
+}
+
+
+
+
+
+
+
+.spades:hover {
+  fill: greenyellow;
+}
+
+
+.visually-hidden {
+  position: absolute; 
+  overflow: hidden;
+  clip: rect (0 0 0 0);
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px; 
+ margin: -1px; 
+}
