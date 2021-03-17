@@ -29,25 +29,135 @@ body {
   font-weight: 400;
   letter-spacing: 0.03em;
   margin: 0;
-  background:red;
+  background: lightgoldenrodyellow;
 }
 
 .container {
-width: 1400px;
+ width: 1400px;
  margin: 0 auto;
- 
+ outline: 5px solid black;
+ background-color:salmon;
 } 
 
-.social-link .icon,
-.icon-spades {
-  width: 40px;
-  height: 40px;
+.page-header {
+  background:paleturquoise;
+}
+
+ul {
+  list-style: none;
+}
+
+.logo {
+
+  width: 96px;
+  height: 50px;
+ 
+  margin-right: 503px;
+  margin-top: 20px;
+  margin-bottom:30px;
+ 
+}
+
+.main-nav,
+.main-nav_list,
+.social-link_list {
+ display: flex; 
  
 }
 
 
-.icon-spades:hover {
-  fill: greenyellow;
+.main-nav .item {
+  text-transform: uppercase;
+}
+
+.main-nav .item:not(:last-child) {
+  margin-right: 48.25px;
+}
+
+.main-nav .item:last-child {
+  margin-right: 67px;
+}
+
+.main-nav_list {
+  padding:0;
+  margin-top: 42px;
+  margin-bottom: 41px;
+}
+
+.social-link_list {
+  padding:0;
+  justify-content: flex-end;
+}
+
+
+.social-link_item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* .social-link {
+justify-content: flex-end;
+}
+
+.social-link_list {
+justify-content: flex-end;
+
+margin-top: 35px;
+margin-bottom: 33px;
+padding:0;
+ 
+}
+
+.social-link_item:not(:last-child) {
+  margin-right: 30px;
+  padding: 0;
+}
+
+.social-link_item:last-child {
+  margin-right: 1px;
+} */
+
+.social-link_list {
+  padding:0;
+}
+
+.link{
+  display: flex;
+
+  width: 40px;
+  height: 40px;
+  color: #FFFFFF;
+
+  border-radius: 50%;
+  border: none;
+
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.link.youtube {
+  background-color: red
+}
+
+.link.instagram {
+  background: #C13584
+}
+
+
+.link.facebook {
+  background:#3B5998;
+}
+
+.link-icon {
+ fill: currentColor;
+}
+
+
+.youtube:hover,
+.instagram:hover,
+.facebook:hover {
+  fill: orange;
 }
 
 
@@ -62,14 +172,8 @@ width: 1400px;
  margin: -1px; 
 }
 
-.icon-btn:hover svg path {
-  fill: green;
-}
 
-.icon-btn {
-  width: 100px;
-  height: 100px;
-}
+
 
 /* @media (min-width: 900px) {
   body {
