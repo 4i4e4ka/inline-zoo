@@ -379,6 +379,9 @@ ul {
 
 .placeholder {
   height: 500px;
+  width: 1400px;
+  outline: 1px solid pink;
+  margin: 0 auto;
 }
 
 .meet-pets {
@@ -531,4 +534,89 @@ ul {
 }
 .pets-item.lion {
   background-image: url(./../../assets/images/lion.jpg);
+}
+
+.button-favourite {
+  position: relative;
+
+  display: block;
+  background: transparent;
+  width: 359px;
+  height: 74px;
+  border: 1px solid #20113d;
+  padding: 26px 45px;
+
+  margin-top: 100px;
+  margin-bottom: 150px;
+
+  text-align: center;
+  color: red;
+}
+.button-favourite::after {
+  position: absolute;
+  display: inline-flex;
+  width: 24.28px;
+  height: 22px;
+  content: ' ';
+  background-image: url(./../../assets/icons/arrow-black.svg);
+
+  right: 0;
+  top: 33%;
+  transform: translateX(-50%);
+}
+
+.button-favourite:hover::after {
+  cursor: pointer;
+
+  background: teal;
+}
+
+.text_favourite {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  text-transform: uppercase;
+  color: #20113d;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .pay_feed {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.pay_feed-image {
+  margin-right: 30px;
+}
+
+.pay_feed-title {
+  margin: 0;
+  padding: 0;
+}
+.pay_feed-text {
+  margin: 0;
+  padding: 0;
+} */
+
+.pay_feed {
+  position: relative;
+  background-image: url(./../../assets/images/monkey.jpg);
+  background-repeat: no-repeat;
+  width: 560px;
+  height: 364px;
+}
+
+.trial {
+  position: absolute;
+
+  right: 0;
+
+  margin-left: 160px;
+  width: 560px;
+  height: 251px;
 }
